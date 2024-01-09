@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .navbar1 ul {
+      background-color:rgba(95, 94, 94, 0.921);
+      list-style: none;
+      
+      overflow: hidden;
+      padding: 12px 10px;
+   }
+   .navbar1 a{ 
+      display:block;
+      text-decoration: none;
+      color: White;
+      padding: 15px;
+      text-align: center;
+   
+   }
+   .navbar1 li{
+      float: left;
+   }
+   .navbar1 .fa-solid{
+      margin-right: 8px;
+   }
+   .navbar1 ul li:hover{
+      background: rgb(47, 47, 46);
+      border-radius: 12px;
+   }
+   .sub-menu {
+      background:rgba(133, 131, 131, 0.921);
+      position: absolute;
+      width: 13vw;
+      margin-top: 5px;
+      margin-left: 15px; 
+      display: none;
+   }
+   .navbar1 ul li:hover .sub-menu{      
+      display: block;
+   }
+   .navbar1 ul li:hover .sub-menu ul {
+      margin: 10px;
+   }
+   .navbar1 ul li:hover .sub-menu ul li{
+      width: 150px;
+      padding: 10px;
+      border-bottom:1px solid white ;
+      text-align: left;
+   }
+   .main {
+      display: flex;
+      width: 1200px;
+      height: 500px;
+      background: deepskyblue;
+      border: 2px solid rgb(249, 143, 143);
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 10px;
+   }
+   .first{
+      flex-basis:30%;
+      margin: 14px;
+      width: 15vw;
+      height: 30vw;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+     
+   }
+   .img1{
+      display: block;
+      width: 271px;
+      height: 373px;
+      position: relative;
+      z-index: 0;
+   }
+   img{
+      width: 100%;
+      height: 100%;
+   }
+   .img1:hover{
+      display: none;
+   }
+   .des{
+      
+      margin: 17px 38px;
+      width:276px;
+      background-color: black;
+      color: aliceblue;
+      opacity: 0;
+      margin-top: -40px;
+      z-index: 13;
+      position: absolute;
+      text-align: center;
+   }
+   .des:hover{
+      opacity: 1;
+   }
+   .heading{
+      margin: 30px 0;
+      text-align: center;
+      color:rgb(125, 14, 14);
+   }
+   h2{
+      margin:10px;
+   }
+   .Buy{
+      margin: 10px 5px;
+   padding:10px;
+   }
+   .class1{
+      margin:auto;
+      padding: 10px;
+      width: 1400px;
+      gap: 27px;
+      display: flex;
+      flex-wrap: wrap;  
+      align-items: center;
+   }
+   .First-1{
+      flex-basis: 100%;
+      height: 100%;
+   }
+   .img-2{
+      flex-basis: 32%;
+      width: 310px;
+      height: 300px;      
+      justify-content: space-around;
+   }
+   .ime{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+   }
+   .class2{
+      margin:auto;
+      padding: 10px;
+      width:100%;
+      gap: 10px;
+      display: flex;
+     flex-wrap: wrap; 
+     
+   }
+   .First-2{
+      flex-basis: 74%;
+      height:768px;
+   }
+.ime-2{
+   flex-basis: 24%;
+}
+.headline{
+   background-color: black;
+   padding: 10px 5px;
+   color: white;
+}
+</style>
+<body>
+   <div class="headline">
+      <marquee> .Website will be launch Soon</marquee>
+   </div>
+   
+    <nav class="navbar1">
+         <ul> 
+            <li><a href="#"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>  Career</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+            <div class="sub-menu">
+               <ul>
+               <li><a href="#">HTML Course</a></li>
+               <li><a href="#">CSS Course</a></li>
+               <li>
+                  <a href="#">PHP Course</a></li>
+               </ul>
+               </div>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-eject"></i>  About</a></li>
+            <li><a href="#"><i class="fa-regular fa-address-book"></i>  Contact Us</a></li>
+         </ul>
+    </nav>
+    <!--Hero section -->
+    <div class="heading">
+    <h1>Featured Products</h1>
+    </div>
+
+    <div class="main">
+      <div class="first">
+         <div class="img1">
+            <img src="/image/mobile.jpg" alt="">
+         </div>
+         <div class="des">
+            <h2>I Phone Pro Max 13</h2>
+            <p>Ceramic Shield front
+            <br>Textured matte glass back and
+            <br>stainless steel design</p>
+            <button class="Buy">Buy Now</button>
+         </div>
+      </div>
+      <div class="first">
+         <div class="img1">
+            <img src="/image/mobile.jpg" alt="">
+         </div>
+         <div class="des">
+            <h2>I Phone Pro Max 13</h2>
+            <p>Ceramic Shield front
+               <br>Textured matte glass back and
+               <br>stainless steel design</p>
+         </div>
+      </div>
+      <div class="first">
+         <div class="img1">
+            <img src="/image/mobile.jpg" alt="">
+         </div>
+         <div class="des">
+            <p>Ceramic Shield front
+            <br>Textured matte glass back and
+            <br>stainless steel design</p>
+         </div>
+      </div>
+    </div>
+    <!-- Assignment Class -->
+    <div class="class1">
+         <div class="First-1">
+           <img src="/image/markhor-1.jpg" width="1400px" height="400px" alt="">
+         </div>
+             <div class="img-2">
+               <img src="/image/markhor-2.jpeg" class="ime" alt="">
+             </div>
+             <div class="img-2">
+               <img src="/image/markhor-3.jpeg" class="ime" alt="">
+             </div>
+             <div class="img-2">
+               <img  src="/image/markhor-1.jpg" class="ime" alt="">
+             </div>
+      <!-- Second Part -->
+       <div class="First-2">
+         <img src="/image/african-lion-king-lion-animal-wallpaper-preview.jpg" width="100%" height="768px"  alt="">
+      </div>
+      <div class="ime-2">
+         <div class="img-21">
+           <img src="/image/download.jpeg" class="ime" alt="">
+         </div>
+         <div class="img-21">
+            <img src="/image/img2.jpg" class="ime" alt="">
+         </div><div class="img-21">
+            <img  src="/image/images.jpeg" class="ime" alt="">
+         </div>
+   </div>
+   </div>    
+   <div>
+      <h1 style="text-align: center;color:rgb(255, 4, 4)">Created By Umer Farooq</h1>
+      <p  style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis repellat quo voluptates,
+          <br> vero et dicta odit eligendi deserunt nesciunt reiciendis
+         <br>  magni voluptatum harum magnam dolorem aperiam, impedit qui tempore.</p>
+         <a href="#">Read more</a>
+   </div> 
+</body>
+</html>
