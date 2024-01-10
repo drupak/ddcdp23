@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .secondparagraph{
+            color: purple;
+        } */
+
+        div .secondparagraph {
+            color: green;
+        }
+
+        /* .parent > .secondparagraph {
+            color: red;
+        } */
+        /* .parent > .secondparagraph + h2{
+            color: blue;
+            border: 2px solid red;
+        } */
+
+        a[target="_blank"] {
+            color: red;
+            font: bold;
+        }
+
+        a {
+            color: green;
+        }
+
+        a:not([target="_blank"]) {
+            color: yellow;
+            font-weight: bolder;
+        }
+
+        ul.pakcities li:first-child{
+            color: purple;
+            font-weight: bold;
+            /* border: 2px solid red; */
+            padding: 5px;
+        }
+
+        ul.pakcities li:last-child{
+            color: green;
+            font-weight: bold;
+            /* border: 2px solid yellow; */
+            padding: 5px;
+        }
+
+        ul.pakcities li:nth-child(odd) {
+            background-color: gray;
+        }
+
+        ul.pakcities li:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="secondparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et aut magni vero nostrum velit, omnis quibusdam nisi at,iusto   dolorem quia voluptates, a ducimus enim expedita cupiditate unde?</p>
+        <h2>heading h2</h2>
+        <p>this is the brother pragraph</p>
+
+        <ul>
+            <li><a href="http://google.com" target="_blank">Go to Google</a> </li>
+            <li><a href="aboutus.html" >About Us</a> </li>
+            <li><a href="mission.html" target="_self" >Mission</a> </li>
+            <li><a href="aboutus.html" >About Us</a> </li>
+            <li><a href="mission.html" >Mission</a> </li>
+        </ul>
+        <ul class="pakcities">
+            <li>Karachi</li>
+            <li>Lahore</li>
+            <li>Islamabad</li>
+            <li>Peshawar</li>
+            <li>Quetta</li>
+        </ul>
+    </div>
+</body>
+</html>
