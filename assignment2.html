@@ -6,29 +6,37 @@
     <title>Assignment</title>
     <style>
         .wrapper{
-            width: 400px;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             background-color: darkolivegreen;
+
         }
         
-        .item{
-            width: 40%;
-        }
+      
         .a{
             background-color: yellow;
-            float: left;
-            height: 350px;
+            /* float: left; */
+            height: 100%;
+
+            flex-basis: 100%;
         }
         .b{
             background-color: blue;
-            float: right;
-            height: 175px;
-            margin-right: 80px;
+            /* float: right; */
+            height: 150px;
+            flex-basis: 50%;
+            /* margin-right: 80px; */
         }
         .c{
             background-color: green;
-            float: right;
-            height: 175px;
-            margin-right: 80px;
+            /* float: right; */
+            height: 150px;
+        
+            flex-basis: 50%;
+            /* margin-right: 80px; */
         }
        
     </style>
