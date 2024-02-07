@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phd Programs</title>
+  <link rel="stylesheet" href="phd.css">
+</head>
+  <style>
+ 
+ .main__section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .section {
+    padding: 20px;
+    gap: 20px;
+  }
+  .left__section {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  .left__card {
+    display: flex;
+    width: 680px;
+    height: 100px;
+    background-color: #124f8f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 110px;
+    margin-top: 20px;
+    /* margin-bottom: 100px; */
+  }
+  .left__image {
+    height: 105px;
+    width: 105px;
+    border-radius: 5px;
+    padding-bottom: 25px;
+  }
+  .left__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .left__desc h2 {
+    color: white;
+    padding-top: 15px;
+    padding-right: 20px;
+  }
+  .left__desc h5 {
+    padding-top: 5px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .empty {
+    height: 80px;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+  .left__icons {
+    padding: 20px 10px;
+    margin-right: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .left__button button {
+    width: 150px;
+    height: 50px;
+    background-color: #0d7bf1;
+    border: none;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .left__button a {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    display: block;
+  }
+  .right__section {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    /* margin: 5px; */
+    margin-top: 100px;
+  }
+  .right__section ul {
+    /* background-color: rgb(231, 226, 220); */
+    background-color: white;
+    /* display: flex;
+    flex-direction: column; */
+   
+  }
+  .right__section li {
+    width: 380px;
+    margin: 10px;
+    list-style: inside;
+   
+background-color: rgb(248, 243, 234);
+    border-bottom: 1px solid rgb(252, 247, 247);
+
+    padding: 20px;
+
+  }
+  .right__section a {
+    color: black;
+  }
+  .right__section li:hover {
+    border: 1px solid rgb(11, 141, 248);
+  }
+         /*--------------Tab--------*/
+@media screen and (max-width: 768px) and (min-width: 375px) {     
+  .main__section {
+        width: 768px;
+        margin-top: 0px;
+        position: relative;
+      }
+      .section {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0px;
+        margin: 100px -50px;
+        flex-direction: row;
+        position: relative;
+        /* margin-bottom: 150px; */
+      }
+      .left__card {
+        margin-left: 90px;
+      }
+      .item {
+        width: 320px;
+        height: 200;
+      }
+      .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .right__section {
+        margin-top: 250px;
+        position: absolute;
+        left: -70px;
+        top: 500px;
+        width: 658px;
+      }
+      .right__section ul {
+        
+        position: absolute;
+        bottom: 0;
+        top: 100px;
+        left: 100px;
+        width: 100%;
+      }
+      .right__section li {
+        width: 670px;
+        margin: 10px 0;
+        list-style: inside;
+        background-color: rgb(253, 244, 232);
+      }
+
+      .emty__item {
+        height: 200px;
+        width: 320px;
+      }
+      .all__professers {
+        position: absolute;
+        left: 55px;
+      }
+      .position3 {
+        margin-right: 340px;
+      }
+  footer{
+    margin-top: 800px;
+  }
+}
+/*-----------mobile screen ----------------*/
+@media screen and (max-width: 375px) and (min-width: 80px) {
+  .section {
+        width: 375px;
+        display: flex;
+       /* flex-direction: column;*/
+        padding: 0px 20px;
+        gap: 10px;
+        margin: 0px 0px;
+        margin-bottom: 300px;
+        position: relative;
+      }
+      .section .left__card {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        height: 200px;
+        position: relative;
+        border-radius: 3px;
+      }
+      .section .left__card .left__image {
+        margin-top: 12px;
+      }
+      .section .left__card .left__desc {
+        width: 200px;
+      }
+      .section .left__card .left__desc h2 {
+        width: 240px;
+        font-size: 22px;
+        padding-top: 0;
+
+      }
+      .section .left__card .left__desc h5 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+      .section .left__card .left__icons {
+        position: absolute;
+        top: 60px;
+        left: 90px;
+      }
+      .section .left__card .left__button {
+        position: absolute;
+        top: 120px;
+        left: 90px;
+      }
+
+      .empty {
+        display: none;
+      }
+      .right__section {
+        width: 320px;
+        top: 1000px;
+        left: -35px;
+        position: absolute;
+      }
+      .right__section ul {
+        background-color: white;
+        /* background-color: aliceblue; */
+        display: flex;
+        flex-direction: column;
+      }
+      .right__section li {
+        background-color: rgb(250, 243, 233);
+        margin: 10px;
+        list-style: inside;
+        width: 300px;
+      }
+
+    footer{
+        margin-top: 600px;
+    }
+}
+  </style>
+<body>
+  <div class="wrapper">
+    <!--top nav-->
+<nav class="top__nav">
+<div class="top__header"> <h1><span>UN</span>vesity</h1></div>
+<div class="search"><img src="/department/images/search1.png" alt=""> </div>
+<div class="login">
+<h3>Login</h3></div>
+<div class="apply">
+<button class="btn">Apply now</button>
+</div>
+</nav>
+<!----bottom nav---->
+<div class="navbar">
+<div class="navbar__menu">
+<ul class="menu__item">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Course</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Admission</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="menu__icons">
+<a href="#"><i class="fa-brands fa-facebook-f">
+<svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_42_313)">
+<path d="M2.53755 14.5V7.93079H0.75061V5.56556H2.53755V3.54535C2.53755 1.95785 3.5931 0.5 6.02532 0.5C7.01008 0.5 7.73827 0.59177 7.73827 0.59177L7.68089 2.80049C7.68089 2.80049 6.93826 2.79347 6.12786 2.79347C5.25077 2.79347 5.11024 3.18638 5.11024 3.83851V5.56556H7.75061L7.63573 7.93079H5.11024V14.5H2.53755Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_42_313">
+<rect width="7" height="14" fill="white" transform="translate(0.750595 0.5)"/>
+</clipPath>
+</defs>
+</svg>    
+</i> </a>
+<a href="#"><i class="fa-brands fa-twitter">
+<svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_42_309)">
+<path d="M18.7507 2.20478C18.0767 2.48925 17.3617 2.67597 16.6297 2.75875C17.3922 2.32334 17.9777 1.63386 18.2534 0.812345C17.5285 1.22215 16.7354 1.51089 15.9084 1.66608C15.2347 0.982355 14.275 0.555054 13.2128 0.555054C11.1733 0.555054 9.5198 2.13029 9.5198 4.07314C9.5198 4.34892 9.55249 4.6174 9.61542 4.87496C6.54628 4.72819 3.82519 3.32759 2.00374 1.19905C1.68593 1.71866 1.50382 2.32307 1.50382 2.96774C1.50382 4.18835 2.15583 5.26515 3.14667 5.89608C2.56023 5.87859 1.98669 5.72769 1.47394 5.45599C1.47373 5.47073 1.47373 5.48546 1.47373 5.50027C1.47373 7.20485 2.74666 8.62682 4.43599 8.95003C3.89218 9.09092 3.32177 9.11154 2.76832 9.01031C3.23822 10.408 4.60207 11.4251 6.21799 11.4536C4.95412 12.3972 3.36176 12.9597 1.63165 12.9597C1.33352 12.9597 1.03962 12.943 0.750702 12.9105C2.38498 13.9087 4.32609 14.4911 6.41156 14.4911C13.2042 14.4911 16.9186 9.13022 16.9186 4.48115C16.9186 4.32855 16.9151 4.17683 16.908 4.02598C17.6309 3.52807 18.2549 2.91135 18.7507 2.20478Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_42_309">
+<rect width="18" height="14" fill="white" transform="translate(0.750702 0.5)"/>
+</clipPath>
+</defs>
+</svg>   
+</i></a>
+<a href="#"><i class="fa-brands fa-linkedin">
+<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_42_305)">
+<path d="M4.38366 15.4999V5.37941H0.953363V15.4999H4.38366ZM2.66896 3.9968C3.86516 3.9968 4.60975 3.21966 4.60975 2.2485C4.58746 1.25544 3.86521 0.499878 2.69166 0.499878C1.51829 0.499878 0.750977 1.25546 0.750977 2.2485C0.750977 3.21971 1.49537 3.9968 2.64656 3.9968H2.66885H2.66896ZM6.28233 15.4999H9.71263V9.84812C9.71263 9.54564 9.73492 9.24348 9.8255 9.02726C10.0735 8.42292 10.6379 7.797 11.5855 7.797C12.8268 7.797 13.3234 8.72508 13.3234 10.0856V15.4998H16.7535V9.69683C16.7535 6.58821 15.0611 5.14181 12.8042 5.14181C10.9537 5.14181 10.1412 6.15614 9.68981 6.84699H9.7127V5.3792H6.2824C6.32742 6.32885 6.2824 15.4997 6.2824 15.4997L6.28233 15.4999Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_42_305">
+<rect width="16" height="15" fill="white" transform="translate(0.750977 0.5)"/>
+</clipPath>
+</defs>
+</svg>   
+</i> </a>
+<a href="#"><i class="fa-brands fa-instagram">
+<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_42_301)">
+<path d="M8.75454 5.45708C6.48311 5.45708 4.65097 7.26059 4.65097 9.49653C4.65097 11.7325 6.48311 13.536 8.75454 13.536C11.026 13.536 12.8581 11.7325 12.8581 9.49653C12.8581 7.26059 11.026 5.45708 8.75454 5.45708ZM8.75454 12.1227C7.28668 12.1227 6.08668 10.945 6.08668 9.49653C6.08668 8.04809 7.28311 6.87036 8.75454 6.87036C10.226 6.87036 11.4224 8.04809 11.4224 9.49653C11.4224 10.945 10.2224 12.1227 8.75454 12.1227ZM13.9831 5.29184C13.9831 5.81567 13.5545 6.23403 13.026 6.23403C12.4938 6.23403 12.0688 5.81216 12.0688 5.29184C12.0688 4.77153 12.4974 4.34966 13.026 4.34966C13.5545 4.34966 13.9831 4.77153 13.9831 5.29184ZM16.701 6.24809C16.6402 4.98598 16.3474 3.86802 15.4081 2.94692C14.4724 2.02583 13.3367 1.73755 12.0545 1.67427C10.7331 1.60044 6.77239 1.60044 5.45097 1.67427C4.1724 1.73403 3.03668 2.02231 2.0974 2.94341C1.15811 3.8645 0.868827 4.98247 0.804541 6.24458C0.729541 7.54536 0.729541 11.4442 0.804541 12.745C0.865255 14.0071 1.15811 15.125 2.0974 16.0461C3.03668 16.9672 4.16882 17.2555 5.45097 17.3188C6.77239 17.3926 10.7331 17.3926 12.0545 17.3188C13.3367 17.259 14.4724 16.9707 15.4081 16.0461C16.3438 15.125 16.6367 14.0071 16.701 12.745C16.776 11.4442 16.776 7.54887 16.701 6.24809ZM14.9938 14.1407C14.7152 14.8297 14.176 15.3606 13.4724 15.6383C12.4188 16.0497 9.91882 15.9547 8.75454 15.9547C7.59025 15.9547 5.08668 16.0461 4.03668 15.6383C3.33668 15.3641 2.7974 14.8332 2.51525 14.1407C2.0974 13.1036 2.19383 10.6426 2.19383 9.49653C2.19383 8.35044 2.10097 5.88598 2.51525 4.85239C2.79383 4.16333 3.33311 3.63247 4.03668 3.35474C5.09025 2.94341 7.59025 3.03833 8.75454 3.03833C9.91882 3.03833 12.4224 2.94692 13.4724 3.35474C14.1724 3.62895 14.7117 4.15981 14.9938 4.85239C15.4117 5.8895 15.3152 8.35044 15.3152 9.49653C15.3152 10.6426 15.4117 13.1071 14.9938 14.1407Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_42_301">
+<rect width="16" height="18" fill="white" transform="translate(0.750977 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+</i></a>
+</div>
+<div class="humburger">
+<div class="line top"></div>
+<div class="line middle"></div>
+<div class="line bottom"></div>
+</div>
+</div>
+<!----------header-------->
+<div class="header"> 
+<div class="header__content">
+<div class="header__heading">
+<h1>Phd Programs</h1>
+</div>
+</div>
+<div class="header__img">
+<img src="/department/images/Rectangle 33.png" alt="" />
+</div>
+</div>
+<!--------main -------->
+<div class="main__section">
+  <div class="section">
+    <div class="left__card">
+      <div class="left__image">
+        <img
+          src="/department/computer/Phd/images/Rectangle 55 (3).png"
+          alt=""
+        />
+      </div>
+      <div class="left__desc">
+        <h2>Prof Amjad Sherazi &nbsp;</h2>
+        <h5>Graduate</h5>
+      </div>
+      <div class="empty"></div>
+      <div class="left__icons">
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003687.png"
+            alt=""
+        /></a>
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003686.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="empty"></div>
+      <div class="left__button">
+        <button>
+          <a href="/department/computer/Phd/professor/prof-amjad.html"
+            >Details</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="left__card">
+      <div class="left__image">
+        <img
+          src="/department/computer/Phd/images/Rectangle 55.png"
+          alt=""
+        />
+      </div>
+      <div class="left__desc">
+        <h2 style="margin-right: 8px">
+          Prof Ali Ahmad &nbsp; &nbsp; &nbsp; &nbsp;
+        </h2>
+        <h5>Undergraduate</h5>
+      </div>
+      <div class="empty"></div>
+      <div class="left__icons">
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003687.png"
+            alt=""
+        /></a>
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003686.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="empty"></div>
+      <div class="left__button">
+        <button>
+          <a href="/department/computer/Phd/professor/prof-amjad.html"
+            >Details</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="left__card">
+      <div class="left__image">
+        <img
+          src="/department/computer/Phd/images/Rectangle 55 (1).png"
+          alt=""
+        />
+      </div>
+      <div class="left__desc">
+        <h2 style="margin-right: 10px">
+          Prof Adil Khan &nbsp; &nbsp; &nbsp; &nbsp;
+        </h2>
+        <h5>Phd</h5>
+      </div>
+      <div class="empty"></div>
+      <div class="left__icons">
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003687.png"
+            alt=""
+        /></a>
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003686.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="empty"></div>
+      <div class="left__button">
+        <button>
+          <a href="/department/computer/Phd/professor/prof-amjad.html"
+            >Details</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="left__card">
+      <div class="left__image">
+        <img src="/department/computer/Phd/images/lady.png" alt="" />
+      </div>
+      <div class="left__desc">
+        <h2>Prof Nasira Khatoon</h2>
+        <h5>Graduate</h5>
+      </div>
+      <div class="empty"></div>
+      <div class="left__icons">
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003687.png"
+            alt=""
+        /></a>
+        <a href="#">
+          <img
+            src="/department//computer/Phd/images/Group 1000003686.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="empty"></div>
+      <div class="left__button">
+        <button>
+          <a href="/department/computer/Phd/professor/prof-amjad.html"
+            >Details</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="left__section">
+      <div class="left__card">
+        <div class="left__image">
+          <img
+            src="/department/computer/Phd/images/Rectangle 55 (2).png"
+            alt=""
+          />
+        </div>
+        <div class="left__desc">
+          <h2>Prof Altaf Khan &nbsp; &nbsp; &nbsp; &nbsp;</h2>
+          <h5>Graduate</h5>
+        </div>
+        <div class="empty"></div>
+        <div class="left__icons">
+          <a href="#">
+            <img
+              src="/department//computer/Phd/images/Group 1000003687.png"
+              alt=""
+          /></a>
+          <a href="#">
+            <img
+              src="/department//computer/Phd/images/Group 1000003686.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="empty"></div>
+        <div class="left__button">
+          <button>
+            <a href="/department/computer/Phd/professor/professor.html"
+              >Details</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="right__section">
+        <ul>
+          <li>
+            <a href="#">IT and Information Systems</a>
+          </li>
+          <li><a href="#">Computer Science</a></li>
+          <li><a href="#">Information Science</a></li>
+          <li><a href="#">Computer Animation</a></li>
+          <li><a href="#">Software Engineering</a></li>
+          <li><a href="#">Computer Engineering</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-------top footer--------->
+<footer>
+<div class="top__footer">
+<div class="footer__content">
+<div class="top__heading">
+<h2>Let’s talk</h2>
+</div>
+<div class="top__paragraph">
+<p>We can't wait to talk about your ideas, goals, needs and dreams. Let's set up a call.</p>
+</div>
+</div>
+<div class="top__btn">
+<button>Apply Now</button>
+</div>
+</div>
+<!-------end footer--------->
+<div class="container">
+<div class="end__footer">
+     <!--main1-->
+<div class="main1__footer">
+<div class="end__header"> <h1><span>UN </span>vesity</h1></div>
+<div class="main1__footer__paragraph">
+<p>Lorem ipsum dolor sit amet <br> consectetur adipiscing elit congue <br>bibendum</p>
+</div>
+<!--media icon-->
+<div class="footer__mediaicon">
+<div class="footer__facebook">
+<svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_286)">
+      <path d="M1.78669 14.8555V8.28626H-0.000244141V5.92103H1.78669V3.90082C1.78669 2.31332 2.84225 0.855469 5.27446 0.855469C6.25923 0.855469 6.98742 0.947239 6.98742 0.947239L6.93004 3.15596C6.93004 3.15596 6.1874 3.14893 5.377 3.14893C4.49991 3.14893 4.35939 3.54184 4.35939 4.19398V5.92103H6.99976L6.88487 8.28626H4.35939V14.8555H1.78669Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_286">
+        <rect width="7" height="14" fill="white" transform="translate(-0.000244141 0.855469)"/>
+      </clipPath>
+    </defs>
+  </svg>
+</div>
+<div class="footer__twitter">
+<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_282)">
+      <path d="M17.9998 2.56037C17.3258 2.84484 16.6108 3.03156 15.8788 3.11434C16.6413 2.67893 17.2268 1.98945 17.5025 1.16794C16.7776 1.57774 15.9845 1.86648 15.1575 2.02167C14.4838 1.33795 13.5241 0.910645 12.4619 0.910645C10.4224 0.910645 8.76891 2.48588 8.76891 4.42873C8.76891 4.70451 8.80161 4.97299 8.86454 5.23055C5.79539 5.08378 3.0743 3.68318 1.25286 1.55464C0.935043 2.07425 0.752934 2.67866 0.752934 3.32333C0.752934 4.54394 1.40494 5.62074 2.39579 6.25168C1.80934 6.23418 1.2358 6.08328 0.723051 5.81158C0.72284 5.82632 0.72284 5.84105 0.72284 5.85586C0.72284 7.56044 1.99578 8.98241 3.68511 9.30562C3.1413 9.44651 2.57088 9.46713 2.01743 9.3659C2.48733 10.7636 3.85118 11.7807 5.46711 11.8092C4.20324 12.7528 2.61087 13.3152 0.880762 13.3152C0.582637 13.3152 0.288731 13.2986 -0.000183105 13.2661C1.63409 14.2643 3.57521 14.8467 5.66068 14.8467C12.4534 14.8467 16.1678 9.48581 16.1678 4.83674C16.1678 4.68415 16.1642 4.53242 16.1571 4.38157C16.88 3.88366 17.5041 3.26694 17.9998 2.56037Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_282">
+        <rect width="18" height="14" fill="white" transform="translate(-0.000183105 0.855469)"/>
+      </clipPath>
+    </defs>
+  </svg>
+</div>
+<div class="footer__linkedin">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_278)">
+      <path d="M3.63281 15.8555V5.735H0.202508V15.8555H3.63281ZM1.9181 4.35239C3.11431 4.35239 3.85889 3.57525 3.85889 2.60409C3.8366 1.61103 3.11436 0.855469 1.9408 0.855469C0.767434 0.855469 0.00012207 1.61105 0.00012207 2.60409C0.00012207 3.5753 0.74452 4.35239 1.89571 4.35239H1.918H1.9181ZM5.53147 15.8555H8.96177V10.2037C8.96177 9.90123 8.98406 9.59907 9.07465 9.38285C9.32263 8.77851 9.88705 8.15259 10.8346 8.15259C12.0759 8.15259 12.5725 9.08067 12.5725 10.4412V15.8554H16.0026V10.0524C16.0026 6.9438 14.3103 5.4974 12.0533 5.4974C10.2028 5.4974 9.39033 6.51173 8.93895 7.20258H8.96185V5.73479H5.53155C5.57657 6.68444 5.53155 15.8553 5.53155 15.8553L5.53147 15.8555Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_278">
+        <rect width="16" height="15" fill="white" transform="translate(0.00012207 0.855469)"/>
+      </clipPath>
+    </defs>
+  </svg>
+</div>
+<div class="footer__instagram">
+<svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_274)">
+      <path d="M8.00368 5.8123C5.73225 5.8123 3.90011 7.61582 3.90011 9.85175C3.90011 12.0877 5.73225 13.8912 8.00368 13.8912C10.2751 13.8912 12.1073 12.0877 12.1073 9.85175C12.1073 7.61582 10.2751 5.8123 8.00368 5.8123ZM8.00368 12.4779C6.53583 12.4779 5.33583 11.3002 5.33583 9.85175C5.33583 8.40332 6.53225 7.22558 8.00368 7.22558C9.47511 7.22558 10.6715 8.40332 10.6715 9.85175C10.6715 11.3002 9.47154 12.4779 8.00368 12.4779ZM13.2322 5.64707C13.2322 6.1709 12.8037 6.58926 12.2751 6.58926C11.743 6.58926 11.318 6.16738 11.318 5.64707C11.318 5.12676 11.7465 4.70488 12.2751 4.70488C12.8037 4.70488 13.2322 5.12676 13.2322 5.64707ZM15.9501 6.60332C15.8894 5.34121 15.5965 4.22324 14.6572 3.30215C13.7215 2.38105 12.5858 2.09277 11.3037 2.02949C9.98225 1.95566 6.02154 1.95566 4.70011 2.02949C3.42154 2.08926 2.28583 2.37754 1.34654 3.29863C0.407258 4.21973 0.117972 5.33769 0.0536865 6.5998C-0.0213135 7.90058 -0.0213135 11.7994 0.0536865 13.1002C0.114401 14.3623 0.407258 15.4803 1.34654 16.4014C2.28583 17.3225 3.41797 17.6107 4.70011 17.674C6.02154 17.7478 9.98225 17.7478 11.3037 17.674C12.5858 17.6142 13.7215 17.326 14.6572 16.4014C15.593 15.4803 15.8858 14.3623 15.9501 13.1002C16.0251 11.7994 16.0251 7.9041 15.9501 6.60332ZM14.243 14.4959C13.9644 15.185 13.4251 15.7158 12.7215 15.9935C11.668 16.4049 9.16797 16.31 8.00368 16.31C6.8394 16.31 4.33583 16.4014 3.28583 15.9935C2.58583 15.7193 2.04654 15.1885 1.7644 14.4959C1.34654 13.4588 1.44297 10.9978 1.44297 9.85175C1.44297 8.70566 1.35011 6.24121 1.7644 5.20762C2.04297 4.51855 2.58226 3.98769 3.28583 3.70996C4.3394 3.29863 6.8394 3.39355 8.00368 3.39355C9.16797 3.39355 11.6715 3.30215 12.7215 3.70996C13.4215 3.98418 13.9608 4.51504 14.243 5.20762C14.6608 6.24472 14.5644 8.70566 14.5644 9.85175C14.5644 10.9978 14.6608 13.4623 14.243 14.4959Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_274">
+        <rect width="16" height="18" fill="white" transform="translate(0.00012207 0.855469)"/>
+      </clipPath>
+    </defs>
+  </svg>
+</div>
+</div>
+</div>
+<!--main 2-->
+<div class="main2__footer">
+<div class="main2__footer__heading">
+<h3>Resources</h3>
+</div>
+<div class="main2__footer__list">
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Course</li>
+<li>Blog</li>
+<li>Admissions</li>
+<li>Contact</li>
+</ul>
+</div>
+</div>
+<!--main 3-->
+<div class="main3__footer">
+<div class="main3__footer__heading">
+<h3>Contact</h3>
+</div>
+<div class="main3__footer__list">
+<ul>
+<li><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.24375 5.74932L5.73984 3.25557C5.91592 3.07872 6.1252 2.9384 6.35567 2.84267C6.58614 2.74694 6.83325 2.69769 7.08281 2.69775C7.5914 2.69775 8.06953 2.89697 8.42812 3.25557L11.1141 5.9415C11.2909 6.11758 11.4312 6.32687 11.527 6.55733C11.6227 6.7878 11.6719 7.03491 11.6719 7.28447C11.6719 7.79307 11.4727 8.27119 11.1141 8.62979L9.15 10.5938C9.60974 11.6072 10.2489 12.5291 11.0367 13.3149C11.8225 14.1046 12.7443 14.7462 13.7578 15.2087L15.7219 13.2446C15.898 13.0678 16.1072 12.9275 16.3377 12.8317C16.5682 12.736 16.8153 12.6868 17.0648 12.6868C17.5734 12.6868 18.0516 12.886 18.4102 13.2446L21.0984 15.9282C21.2755 16.1046 21.4159 16.3143 21.5117 16.5452C21.6074 16.7761 21.6565 17.0236 21.6562 17.2735C21.6562 17.7821 21.457 18.2603 21.0984 18.6188L18.607 21.1103C18.0352 21.6845 17.2453 22.0103 16.4344 22.0103C16.2633 22.0103 16.0992 21.9962 15.9375 21.9681C12.7781 21.4478 9.64453 19.7673 7.11562 17.2407C4.58906 14.7165 2.91094 11.5853 2.38359 8.4165C2.22422 7.44853 2.54531 6.45244 3.24375 5.74932Z" fill="white"/>
+  </svg> <a href="#">(012) 345-6789</a></li>
+
+<li><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.644 5.15381H20.544C22.044 5.15381 22.8 5.86181 22.8 7.30181V17.4058C22.8 18.8338 22.044 19.5538 20.544 19.5538H4.644C3.144 19.5538 2.388 18.8338 2.388 17.4058V7.30181C2.388 5.86181 3.144 5.15381 4.644 5.15381ZM12.588 15.4738L20.676 8.83781C20.964 8.59781 21.192 8.04581 20.832 7.55381C20.484 7.06181 19.848 7.04981 19.428 7.34981L12.588 11.9818L5.76 7.34981C5.34 7.04981 4.704 7.06181 4.356 7.55381C3.996 8.04581 4.224 8.59781 4.512 8.83781L12.588 15.4738Z" fill="white"/>
+  </svg><a href="#">info@unversity.com</a></li>
+
+<li><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_267)">
+      <path d="M6.13594 18.9283C4.23281 16.5459 0 10.7717 0 7.52832C0 3.59324 3.13396 0.40332 7 0.40332C10.8646 0.40332 14 3.59324 14 7.52832C14 10.7717 9.73438 16.5459 7.86406 18.9283C7.41562 19.4961 6.58437 19.4961 6.13594 18.9283ZM7 9.90332C8.28698 9.90332 9.33333 8.83828 9.33333 7.52832C9.33333 6.21836 8.28698 5.15332 7 5.15332C5.71302 5.15332 4.66667 6.21836 4.66667 7.52832C4.66667 8.83828 5.71302 9.90332 7 9.90332Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_267">
+        <rect width="14" height="19" fill="white" transform="translate(0 0.40332)"/>
+      </clipPath>
+    </defs>
+  </svg><a href="#">Lorem ipsum dolor sit amet <br>consectetur adipiscing</a></li>
+</ul>
+</div>
+</div>
+<!-- main 4-->
+<div class="main4__footer">
+<div class="main4__footer__heading">
+<h3>Newsletter</h3>
+</div>
+<div class="footer__box">
+<p>email</p>
+<div class="icon">
+    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.00995 18.3291L19.5016 10.8291L2.00995 3.3291L2.00162 9.16243L14.5016 10.8291L2.00162 12.4958L2.00995 18.3291Z" fill="white"/>
+  </svg>
+</div>
+</div>
+</div>
+</div>
+
+<div class="end__text">
+<div class="end__line"></div>
+<p>© UNversity Themes Design by Drupak, 2024</p>
+</div>
+</div>
+</footer>
+</div>
+<script>
+let humburger = document.querySelector(".humburger");
+let topline = document.querySelector(".top");
+let middleline = document.querySelector(".middle");
+let bottomline = document.querySelector(".bottom");
+let menu__item = document.querySelector(".menu__item");
+let menu__icons = document.querySelector(".menu__icons");
+let navbar__menu = document.querySelector(".navbar__menu");
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+
+humburger.addEventListener("click", function () {
+topline.classList.toggle("top-a");
+middleline.classList.toggle("middle-a");
+bottomline.classList.toggle("bottom-a");
+menu__icons.classList.toggle("bring_back");
+menu__item.classList.toggle("bring_back");
+navbar__menu.classList.toggle("bring_back");
+});
+</script>
+</body>
+</html>
